@@ -61,6 +61,20 @@
             document.getElementById('form').submit();
           }
         },
+        inputEventReceived: function(inputEvent){
+            switch(inputEvent.eventType){
+                case 'focusClassAdded':
+                    break;
+                case 'focusClassRemoved':
+                    break;
+                case 'errorClassAdded':
+                    break;
+                case 'errorClassRemoved':
+                    break;
+                case 'postalCodeChanged':
+                    break;
+            }
+        },
         unsupportedBrowserDetected: function() {
           // Alert the buyer that their browser is not supported
         }
